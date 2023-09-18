@@ -1,0 +1,19 @@
+a.btn.disabled {
+    cursor: not-allowed !important;
+}
+
+/* .nav.nav-treeview.pl-3 a {
+    max-width: 100%;
+} */
+
+li.nav-item.has-treeview>ul>li.nav-item>a {
+    max-width: 100%;
+}
+
+ul.nav.nav-treeview.pl-3 {
+    width: calc(100% - 1rem);
+}
+
+ul.nav.nav-treeview.pl-3.menu-open {
+    width: 100%;
+}
