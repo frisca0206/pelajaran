@@ -2,9 +2,9 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="<?= url_to('dashboard') ?>" class="brand-link">
-        <img src="<?= base_url('adminLTE'); ?>/img/AdminLTELogo.png" alt="AdminLTE Logo"
+        <img src="<?= base_url('assets'); ?>/img/AdminLTELogo.png" alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Subjects</span>
+        <span class="brand-text font-weight-light">Timetable</span>
     </a>
 
     <!-- Sidebar -->
@@ -24,8 +24,20 @@
                 </li>
                 <li class="nav-item">
                     <a href="<?= url_to('mata_pelajaran') ?>"class="nav-link">
+                        <i class="fas fa-calendar nav-icon"></i>
+                        <p> Lesson Timetable</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('buku') ?>"class="nav-link">
                         <i class="fas fa-address-book nav-icon"></i>
                         <p> Subjects</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('guru') ?>"class="nav-link">
+                        <i class="fas fa-user nav-icon"></i>
+                        <p> Teachers</p>
                     </a>
                 </li>
                 

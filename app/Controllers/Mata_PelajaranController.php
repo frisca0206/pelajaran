@@ -18,8 +18,8 @@ class Mata_PelajaranController extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Mata Pelajaran Management',
-            'page_title' => 'List Mata Pelajaran',
+            'title' => 'Lesson Timetable Management',
+            'page_title' => 'List Lesson Timetable',
             'mata_pelajarans' => $this->Mata_PelajaranModel->findAll()
         ];
         return view('mata_pelajaran/index', $data);
@@ -28,8 +28,8 @@ class Mata_PelajaranController extends BaseController
     public function create()
     {
         $data = [
-            'title' => 'Mata Pelajaran Management',
-            'page_title' => 'Create List',
+            'title' => 'Lesson Timetable Management',
+            'page_title' => 'Create List Lesson Timetable',
         ];
 
         return view('mata_pelajaran/create', $data);
@@ -56,8 +56,8 @@ class Mata_PelajaranController extends BaseController
     public function edit($mata_pelajaran_id)
     {
         $data = [
-            'title' => 'Mata Pelajaran Management',
-            'page_title' => 'Edit Mata Pelajaran',
+            'title' => 'Lesson Timetable Management',
+            'page_title' => 'Edit Lesson Timetable',
             'mata_pelajaran' => $this->Mata_PelajaranModel->find($mata_pelajaran_id)
         ];
         return view('mata_pelajaran/edit', $data);

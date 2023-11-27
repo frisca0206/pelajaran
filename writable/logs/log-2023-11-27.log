@@ -1,0 +1,33 @@
+CRITICAL - 2023-11-27 02:00:12 --> Undefined variable $page_title
+in APPPATH\Views\guru\create.php on line 11.
+ 1 APPPATH\Views\guru\create.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_title', 'C:\\xampp\\htdocs\\pelajaran\\app\\Views\\guru\\create.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pelajaran\\app\\Views\\guru\\create.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('guru/create', [], true)
+ 5 APPPATH\Controllers\GuruController.php(35): view('guru/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\GuruController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 02:33:11 --> Undefined variable $guru
+in APPPATH\Views\guru\edit.php on line 28.
+ 1 APPPATH\Views\guru\edit.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $guru', 'C:\\xampp\\htdocs\\pelajaran\\app\\Views\\guru\\edit.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pelajaran\\app\\Views\\guru\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('guru/edit', [], true)
+ 5 APPPATH\Controllers\GuruController.php(57): view('guru/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\GuruController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 02:33:43 --> Undefined variable $guru
+in APPPATH\Views\guru\edit.php on line 34.
+ 1 APPPATH\Views\guru\edit.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $guru', 'C:\\xampp\\htdocs\\pelajaran\\app\\Views\\guru\\edit.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pelajaran\\app\\Views\\guru\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('guru/edit', [], true)
+ 5 APPPATH\Controllers\GuruController.php(57): view('guru/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\GuruController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

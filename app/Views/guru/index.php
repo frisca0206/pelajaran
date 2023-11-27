@@ -22,37 +22,31 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Manage Lesson Timetable</h3>
+                            <h3 class="card-title">Manage Teachers</h3>
                             <div class="d-flex justify-content-end mb-1">
-                                <a href="<?= url_to('mata_pelajaran-create') ?>" class="btn btn-success mb-2"
+                                <a href="<?= url_to('guru-create') ?>" class="btn btn-success mb-2"
                                     id="btn_modal_create">Create</a>
                             </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="mata_pelajaran_table" class="table table-bordered table-hover masterdata-datatable">
+                            <table id="guru_table" class="table table-bordered table-hover masterdata-datatable">
                                 <thead>
                                     <tr>
-                                        <th>No</th>
-                                        <th>Subjects</th>
-                                        <th width="50%">Description</th>
-                                        <th width="150">Total Hours</th>
-                                        <th width="150">Teachers</th>
+                                        <th> No </th>
+                                        <th> Teachers </th>
                                         <th width="150">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($mata_pelajarans as $key => $mata_pelajaran) : ?>
+                                    <?php foreach ($gurus as $key => $guru) : ?>
                                     <tr>
                                         <td><?= $key + 1 ?></td>
-                                        <td><?= $mata_pelajaran['nama_pelajaran'] ?></td>
-                                        <td><?= $mata_pelajaran['deskripsi'] ?></td>
-                                        <td><?= $mata_pelajaran['total_jam'] ?></td>
-                                        <td><?= $mata_pelajaran['guru'] ?></td>
+                                        <td><?= $guru['guru'] ?></td>
                                         <td>
-                                            <a href="<?= url_to('mata_pelajaran-edit', $mata_pelajaran['id'])?>"
+                                            <a href="<?= url_to('guru-edit', $guru['id'])?>"
                                                 class="btn btn-primary btn-sm">Edit</a>
-                                            <a href="<?= url_to('mata_pelajaran-delete', $mata_pelajaran['id'])?>"
+                                            <a href="<?= url_to('guru-delete', $guru['id'])?>"
                                                 class="btn btn-danger btn-sm">Delete</a>
                                         </td>
                                     </tr>

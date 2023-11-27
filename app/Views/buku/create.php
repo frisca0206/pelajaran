@@ -1,6 +1,6 @@
-<?= $this->extend('layouts/template'); ?>
+<?php $this->extend('layouts/template'); ?>
 
-<?= $this->Section('content'); ?>
+<?php $this->Section('content'); ?>
 
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -15,7 +15,7 @@
     </div>
     <!-- /.content-header -->
 
-    <!-- Main content -->
+    <!-- Main Content -->
     <section class="content">
         <div class="container">
             <div class="row">
@@ -23,7 +23,7 @@
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <form action="<?= url_to('mata_pelajaran-store')?>" method="POST">
+                            <form action="<?= url_to('buku-store')?>" method="POST">
                                 <?= csrf_field() ?>
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
@@ -32,27 +32,11 @@
                                             <input type="text" class="form-control" id="nama_pelajaran"
                                                 name="nama_pelajaran" required>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="deskripsi">Description</label>
-                                            <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30"
-                                                rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="total_jam">Total Hours</label>
-                                            <textarea class="form-control" name="total_jam" id="total_jam" cols="30"
-                                                rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="guru">Teachers</label>
-                                            <textarea class="form-control" name="guru" id="guru" cols="30"
-                                                rows="3"></textarea>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 text-right">
-                                    <a href="<?= url_to('mata_pelajaran') ?>" type="button"
-                                        class="btn btn-secondary">Cancel</a>
-                                    <button type="submit" class="btn btn-primary" id="btn_submit">Add Lesson Timetable</button>
+                                    <a href="<?= url_to('buku') ?>" type="button" class="btn btn-secondary">Cancel</a>
+                                    <button type="submit" class="btn btn-primary" id="btn_submit">Add Subject</button>
                                 </div>
                             </form>
                         </div>

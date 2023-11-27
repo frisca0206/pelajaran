@@ -23,36 +23,23 @@
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <form action="<?= url_to('mata_pelajaran-store')?>" method="POST">
+                            <form action="<?= url_to('buku-update')?>" method="POST">
                                 <?= csrf_field() ?>
+                                <input type="hidden" name="buku_id" value="<?= $buku['id'] ?>">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <label for="nama_pelajaran">Subjects</label>
                                             <input type="text" class="form-control" id="nama_pelajaran"
-                                                name="nama_pelajaran" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="deskripsi">Description</label>
-                                            <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30"
-                                                rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="total_jam">Total Hours</label>
-                                            <textarea class="form-control" name="total_jam" id="total_jam" cols="30"
-                                                rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="guru">Teachers</label>
-                                            <textarea class="form-control" name="guru" id="guru" cols="30"
-                                                rows="3"></textarea>
+                                                name="nama_pelajaran" value="<?= $buku['nama_pelajaran'] ?>"
+                                                required>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12 text-right">
-                                    <a href="<?= url_to('mata_pelajaran') ?>" type="button"
-                                        class="btn btn-secondary">Cancel</a>
-                                    <button type="submit" class="btn btn-primary" id="btn_submit">Add Lesson Timetable</button>
+                                <div class="col-md-6 col-sm-12">
+                                    <a href="<?= url_to('buku') ?>" type="button" class="btn btn-secondary">Cancel</a>
+                                    <button type="submit" class="btn btn-primary" id="btn_submit">Update
+                                        Subjects</button>
                                 </div>
                             </form>
                         </div>

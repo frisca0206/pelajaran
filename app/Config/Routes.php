@@ -46,6 +46,21 @@ $routes->get('/mata_pelajaran/create', 'Mata_PelajaranController::create',['as' 
 $routes->post('/mata_pelajaran/store', 'Mata_PelajaranController::store',['as' => 'mata_pelajaran-store']);
 $routes->post('/mata_pelajaran/update', 'Mata_PelajaranController::update',['as' => 'mata_pelajaran-update']);
 
+$routes->get('/buku', 'BukuController::index',['as' => 'buku']);
+$routes->get('/buku/edit/(:num)', 'BukuController::edit/$1',['as' => 'buku-edit']);
+$routes->get('/buku/delete/(:num)', 'BukuController::delete/$1',['as' => 'buku-delete']);
+$routes->get('/buku/create', 'BukuController::create',['as' => 'buku-create']);
+$routes->post('/buku/store', 'BukuController::store',['as' => 'buku-store']);
+$routes->post('/buku/update', ' BukuController::update',['as' => 'buku-update']);
+
+
+$routes->get('/guru', 'GuruController::index',['as' => 'guru']);
+$routes->get('/guru/edit/(:num)', 'GuruController::edit/$1',['as' => 'guru-edit']);
+$routes->get('/guru/delete/(:num)', 'GuruController::delete/$1',['as' => 'guru-delete']);
+$routes->get('/guru/create', 'GuruController::create',['as' => 'guru-create']);
+$routes->post('/guru/store', 'GuruController::store',['as' => 'guru-store']);
+$routes->post('/guru/update', 'GuruController::update',['as' => 'guru-update']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

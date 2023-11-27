@@ -1,6 +1,6 @@
-<?= $this->extend('layouts/template'); ?>
+<?php $this->extend('layouts/template'); ?>
 
-<?= $this->Section('content'); ?>
+<?php $this->Section('content'); ?>
 
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -22,37 +22,31 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Manage Lesson Timetable</h3>
+                            <h3 class="card-title">Manage Subjects</h3>
                             <div class="d-flex justify-content-end mb-1">
-                                <a href="<?= url_to('mata_pelajaran-create') ?>" class="btn btn-success mb-2"
+                                <a href="<?= url_to('buku-create') ?>" class="btn btn-success mb-2"
                                     id="btn_modal_create">Create</a>
                             </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="mata_pelajaran_table" class="table table-bordered table-hover masterdata-datatable">
+                            <table id="buku_table" class="table table-bordered table-hover masterdata-datatable">
                                 <thead>
                                     <tr>
                                         <th>No</th>
                                         <th>Subjects</th>
-                                        <th width="50%">Description</th>
-                                        <th width="150">Total Hours</th>
-                                        <th width="150">Teachers</th>
                                         <th width="150">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($mata_pelajarans as $key => $mata_pelajaran) : ?>
+                                    <?php foreach ($bukus as $key => $subject) : ?>
                                     <tr>
                                         <td><?= $key + 1 ?></td>
-                                        <td><?= $mata_pelajaran['nama_pelajaran'] ?></td>
-                                        <td><?= $mata_pelajaran['deskripsi'] ?></td>
-                                        <td><?= $mata_pelajaran['total_jam'] ?></td>
-                                        <td><?= $mata_pelajaran['guru'] ?></td>
+                                        <td><?= $subject['nama_pelajaran'] ?></td>
                                         <td>
-                                            <a href="<?= url_to('mata_pelajaran-edit', $mata_pelajaran['id'])?>"
+                                            <a href="<?= url_to('buku-edit', $subject['id'])?>"
                                                 class="btn btn-primary btn-sm">Edit</a>
-                                            <a href="<?= url_to('mata_pelajaran-delete', $mata_pelajaran['id'])?>"
+                                            <a href="<?= url_to('buku-delete', $subject['id'])?>"
                                                 class="btn btn-danger btn-sm">Delete</a>
                                         </td>
                                     </tr>
