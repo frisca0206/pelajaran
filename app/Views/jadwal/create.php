@@ -23,32 +23,48 @@
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <form action="<?= url_to('mata_pelajaran-update')?>" method="POST">
+                            <form action="<?= url_to('jadwal-store')?>" method="POST">
                                 <?= csrf_field() ?>
-                                <input type="hidden" name="mata_pelajaran_id" value="<?= $mata_pelajaran['id'] ?>">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <label for="nama_pelajaran">Subjects</label>
-                                            <input type="text" class="form-control" id="nama_pelajaran" name="nama_pelajaran" value="<?= $mata_pelajaran['nama_pelajaran'] ?>" required>
+                                            <select id="nama_pelajaran" name="nama_pelajaran" class="form-control">
+                                                <option value=""></option>
+                                                <?php foreach ($bukus as $key => $buku) : ?>
+                                                <option value="<?php echo $buku['id']; ?>">
+                                                    <?php echo $buku['nama_pelajaran']; ?>
+                                                </option>
+                                                <?php endforeach ?>
+                                            </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="deskripsi">Description</label>
-                                            <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="3"><?= $mata_pelajaran['deskripsi'] ?></textarea>
+                                            <input type="text" class="form-control" name="deskripsi" id="deskripsi"
+                                                required>
                                         </div>
                                         <div class="form-group">
                                             <label for="total_jam">Total Hours</label>
-                                            <textarea class="form-control" name="total_jam" id="total_jam" cols="30" rows="3"><?= $mata_pelajaran['total_jam'] ?></textarea>
+                                            <input type="text" class="form-control" name="total_jam" id="total_jam"
+                                                required>
                                         </div>
                                         <div class="form-group">
                                             <label for="guru">Teachers</label>
-                                            <textarea class="form-control" name="guru" id="guru" cols="30" rows="3"><?= $mata_pelajaran['guru'] ?></textarea>
+                                            <select id="guru" name="guru" class="form-control">
+                                                <option value=""></option>
+                                                <?php foreach ($gurus as $key => $guru) : ?>
+                                                <option value="<?php echo $guru['id'];?>">
+                                                    <?php echo $guru['guru']; ?>
+                                                </option>
+                                                <?php endforeach ?>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 text-right">
-                                    <a href="<?= url_to('mata_pelajaran') ?>" type="button" class="btn btn-secondary">Cancel</a>
-                                    <button type="submit" class="btn btn-primary" id="btn_submit">Update Lesson Timetable</button>
+                                    <a href="<?= url_to('jadwal') ?>" type="button" class="btn btn-secondary">Cancel</a>
+                                    <button type="submit" class="btn btn-primary" id="btn_submit">Add Lesson
+                                        Timetable</button>
                                 </div>
                             </form>
                         </div>

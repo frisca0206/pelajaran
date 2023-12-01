@@ -1,0 +1,181 @@
+INFO - 2023-11-30 08:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-30 08:28:17 --> mysqli_sql_exception: Table 'pelajaran.mata_pelajaran' doesn't exist in C:\xampp\htdocs\pelajaran\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pelajaran\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pelajaran\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pelajaran\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pelajaran\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pelajaran\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pelajaran\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pelajaran\app\Controllers\Mata_PelajaranController.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pelajaran\system\CodeIgniter.php(932): App\Controllers\Mata_PelajaranController->index()
+#8 C:\xampp\htdocs\pelajaran\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mata_PelajaranController))
+#9 C:\xampp\htdocs\pelajaran\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pelajaran\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-30 08:28:17 --> Table 'pelajaran.mata_pelajaran' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mata_pelajaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mata_pelajaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mata_pelajaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mata_pelajaran`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Mata_PelajaranController.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Mata_PelajaranController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mata_PelajaranController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-30 08:30:15 --> mysqli_sql_exception: Table 'pelajaran.mata_pelajaran' doesn't exist in C:\xampp\htdocs\pelajaran\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pelajaran\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pelajaran\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pelajaran\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pelajaran\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pelajaran\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pelajaran\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pelajaran\app\Controllers\Mata_PelajaranController.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pelajaran\system\CodeIgniter.php(932): App\Controllers\Mata_PelajaranController->index()
+#8 C:\xampp\htdocs\pelajaran\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mata_PelajaranController))
+#9 C:\xampp\htdocs\pelajaran\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\pelajaran\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-30 08:30:15 --> Table 'pelajaran.mata_pelajaran' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `mata_pelajaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mata_pelajaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mata_pelajaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mata_pelajaran`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Mata_PelajaranController.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Mata_PelajaranController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mata_PelajaranController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:06:12 --> Class "App\Controllers\BukuModel" not found
+in APPPATH\Controllers\JadwalController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:12:32 --> syntax error, unexpected identifier "dd", expecting "function" or "const"
+in APPPATH\Controllers\JadwalController.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pelajaran\\app\\Controllers\\JadwalController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\JadwalController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\JadwalController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\JadwalController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:13:08 --> Class "App\Controllers\BukuModel" not found
+in APPPATH\Controllers\JadwalController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:17:07 --> Class "App\Controllers\BukuModel" not found
+in APPPATH\Controllers\JadwalController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:26:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:26:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:26:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:26:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:39:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:39:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:39:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:39:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:39:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:39:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:39:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:39:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:39:18 --> Undefined array key "nama_pelajaran"
+in APPPATH\Views\jadwal\edit.php on line 34.
+ 1 APPPATH\Views\jadwal\edit.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pelajaran"', 'C:\\xampp\\htdocs\\pelajaran\\app\\Views\\jadwal\\edit.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pelajaran\\app\\Views\\jadwal\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('jadwal/edit', [], true)
+ 5 APPPATH\Controllers\JadwalController.php(75): view('jadwal/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\JadwalController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:57:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-30 09:57:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 09:57:36 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\jadwal\edit.php on line 59.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('jadwal/edit', [], true)
+ 3 APPPATH\Controllers\JadwalController.php(75): view('jadwal/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\JadwalController->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

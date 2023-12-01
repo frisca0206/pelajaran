@@ -1,0 +1,82 @@
+WARNING - 2023-12-01 00:53:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:53:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:53:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:53:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-01 00:53:42 --> Undefined variable $guru
+in APPPATH\Views\jadwal\edit.php on line 37.
+ 1 APPPATH\Views\jadwal\edit.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $guru', 'C:\\xampp\\htdocs\\pelajaran\\app\\Views\\jadwal\\edit.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pelajaran\\app\\Views\\jadwal\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('jadwal/edit', [], true)
+ 5 APPPATH\Controllers\JadwalController.php(75): view('jadwal/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\JadwalController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:54:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:54:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-01 00:54:29 --> Undefined array key "nama_pembelajaran_id"
+in APPPATH\Views\jadwal\edit.php on line 38.
+ 1 APPPATH\Views\jadwal\edit.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_pembelajaran_id"', 'C:\\xampp\\htdocs\\pelajaran\\app\\Views\\jadwal\\edit.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pelajaran\\app\\Views\\jadwal\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('jadwal/edit', [], true)
+ 5 APPPATH\Controllers\JadwalController.php(75): view('jadwal/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\JadwalController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:54:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:54:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:54:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:54:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:54:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$BukuModel is deprecated in APPPATH\Controllers\JadwalController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-01 00:54:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\JadwalController::$GuruModel is deprecated in APPPATH\Controllers\JadwalController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JadwalController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

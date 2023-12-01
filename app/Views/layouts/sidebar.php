@@ -23,7 +23,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= url_to('mata_pelajaran') ?>"class="nav-link">
+                    <a href="<?= url_to('jadwal') ?>"class="nav-link">
                         <i class="fas fa-calendar nav-icon"></i>
                         <p> Lesson Timetable</p>
                     </a>

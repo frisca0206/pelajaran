@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Mata_PelajaranModel extends Model
+class JadwalModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'mata_pelajaran';
+    protected $table            = 'jadwal';
     protected $primarykey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nama_pelajaran','deskripsi','total_jam','guru'];
+    protected $allowedFields    = ['nama_pelajaran_id','deskripsi','total_jam','guru_id'];
 
     // Dates
     protected $useTimestamps = false;

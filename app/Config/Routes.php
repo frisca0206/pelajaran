@@ -39,12 +39,12 @@ $routes->get('/login', 'LoginController::index',['as' => 'login']);
 // => default controller
 $routes->get('/dashboard', 'DashboardController::index',['as' => 'dashboard']);
 
-$routes->get('/mata_pelajaran', 'Mata_PelajaranController::index',['as' => 'mata_pelajaran']);
-$routes->get('/mata_pelajaran/edit/(:num)', 'Mata_PelajaranController::edit/$1',['as' => 'mata_pelajaran-edit']);
-$routes->get('/mata_pelajaran/delete/(:num)', 'Mata_PelajaranController::delete/$1',['as' => 'mata_pelajaran-delete']);
-$routes->get('/mata_pelajaran/create', 'Mata_PelajaranController::create',['as' => 'mata_pelajaran-create']);
-$routes->post('/mata_pelajaran/store', 'Mata_PelajaranController::store',['as' => 'mata_pelajaran-store']);
-$routes->post('/mata_pelajaran/update', 'Mata_PelajaranController::update',['as' => 'mata_pelajaran-update']);
+$routes->get('/jadwal', 'JadwalController::index',['as' => 'jadwal']);
+$routes->get('/jadwal/edit/(:num)', 'JadwalController::edit/$1',['as' => 'jadwal-edit']);
+$routes->get('/jadwal/delete/(:num)', 'JadwalController::delete/$1',['as' => 'jadwal-delete']);
+$routes->get('/jadwal/create', 'JadwalController::create',['as' => 'jadwal-create']);
+$routes->post('/jadwal/store', 'JadwalController::store',['as' => 'jadwal-store']);
+$routes->post('/jadwal/update', 'JadwalController::update',['as' => 'jadwal-update']);
 
 $routes->get('/buku', 'BukuController::index',['as' => 'buku']);
 $routes->get('/buku/edit/(:num)', 'BukuController::edit/$1',['as' => 'buku-edit']);
