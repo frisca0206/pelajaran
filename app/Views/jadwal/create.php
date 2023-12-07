@@ -31,9 +31,9 @@
                                             <label for="nama_pelajaran">Subjects</label>
                                             <select id="nama_pelajaran" name="nama_pelajaran" class="form-control">
                                                 <option value=""></option>
-                                                <?php foreach ($bukus as $key => $buku) : ?>
-                                                <option value="<?php echo $buku['id']; ?>">
-                                                    <?php echo $buku['nama_pelajaran']; ?>
+                                                <?php foreach ($mapels as $key => $mapel) : ?>
+                                                <option value="<?php echo $mapel['id']; ?>">
+                                                    <?php echo $mapel['nama_pelajaran']; ?>
                                                 </option>
                                                 <?php endforeach ?>
                                             </select>

@@ -23,7 +23,7 @@
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <form action="<?= url_to('buku-store')?>" method="POST">
+                            <form action="<?= url_to('mapel-store')?>" method="POST">
                                 <?= csrf_field() ?>
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
@@ -35,7 +35,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 text-right">
-                                    <a href="<?= url_to('buku') ?>" type="button" class="btn btn-secondary">Cancel</a>
+                                    <a href="<?= url_to('mapel') ?>" type="button" class="btn btn-secondary">Cancel</a>
                                     <button type="submit" class="btn btn-primary" id="btn_submit">Add Subject</button>
                                 </div>
                             </form>

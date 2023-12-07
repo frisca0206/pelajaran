@@ -29,7 +29,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= url_to('buku') ?>"class="nav-link">
+                    <a href="<?= url_to('mapel') ?>"class="nav-link">
                         <i class="fas fa-address-book nav-icon"></i>
                         <p> Subjects</p>
                     </a>

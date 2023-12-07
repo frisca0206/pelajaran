@@ -23,21 +23,21 @@
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <form action="<?= url_to('buku-update')?>" method="POST">
+                            <form action="<?= url_to('mapel-update')?>" method="POST">
                                 <?= csrf_field() ?>
-                                <input type="hidden" name="buku_id" value="<?= $buku['id'] ?>">
+                                <input type="hidden" name="mapel_id" value="<?= $subject['id'] ?>">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <label for="nama_pelajaran">Subjects</label>
                                             <input type="text" class="form-control" id="nama_pelajaran"
-                                                name="nama_pelajaran" value="<?= $buku['nama_pelajaran'] ?>"
+                                                name="nama_pelajaran" value="<?= $subject['nama_pelajaran'] ?>"
                                                 required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
-                                    <a href="<?= url_to('buku') ?>" type="button" class="btn btn-secondary">Cancel</a>
+                                    <a href="<?= url_to('mapel') ?>" type="button" class="btn btn-secondary">Cancel</a>
                                     <button type="submit" class="btn btn-primary" id="btn_submit">Update
                                         Subjects</button>
                                 </div>

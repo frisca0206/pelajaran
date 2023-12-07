@@ -46,12 +46,12 @@ $routes->get('/jadwal/create', 'JadwalController::create',['as' => 'jadwal-creat
 $routes->post('/jadwal/store', 'JadwalController::store',['as' => 'jadwal-store']);
 $routes->post('/jadwal/update', 'JadwalController::update',['as' => 'jadwal-update']);
 
-$routes->get('/buku', 'BukuController::index',['as' => 'buku']);
-$routes->get('/buku/edit/(:num)', 'BukuController::edit/$1',['as' => 'buku-edit']);
-$routes->get('/buku/delete/(:num)', 'BukuController::delete/$1',['as' => 'buku-delete']);
-$routes->get('/buku/create', 'BukuController::create',['as' => 'buku-create']);
-$routes->post('/buku/store', 'BukuController::store',['as' => 'buku-store']);
-$routes->post('/buku/update', ' BukuController::update',['as' => 'buku-update']);
+$routes->get('/mapel', 'MapelController::index',['as' => 'mapel']);
+$routes->get('/mapel/edit/(:num)', 'MapelController::edit/$1',['as' => 'mapel-edit']);
+$routes->get('/mapel/delete/(:num)', 'MapelController::delete/$1',['as' => 'mapel-delete']);
+$routes->get('/mapel/create', 'MapelController::create',['as' => 'mapel-create']);
+$routes->post('/mapel/store', 'MapelController::store',['as' => 'mapel-store']);
+$routes->post('/mapel/update', 'MapelController::update',['as' => 'mapel-update']);
 
 
 $routes->get('/guru', 'GuruController::index',['as' => 'guru']);

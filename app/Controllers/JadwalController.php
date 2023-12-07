@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\JadwalModel;
-use App\Models\BukuModel;
+use App\Models\MapelModel;
 use App\Models\GuruModel;
 
 
@@ -15,14 +15,14 @@ class JadwalController extends BaseController
     public function __construct()
     {
         $this->JadwalModel = new JadwalModel();
-        $this->BukuModel = new BukuModel();
+        $this->MapelModel = new MapelModel();
         $this->GuruModel = new GuruModel();
     }
 
     public function index()
     {
-        $jadwals = $this->JadwalModel->select('jadwal.*,buku.nama_pelajaran,guru.guru')
-        ->join('buku','buku.id = jadwal.nama_pelajaran_id')
+        $jadwals = $this->JadwalModel->select('jadwal.*,mapel.nama_pelajaran,guru.guru')
+        ->join('mapel','mapel.id = jadwal.nama_pelajaran_id')
         ->join('guru','guru.id = jadwal.guru_id')->findAll();
 
         $data = [
@@ -38,7 +38,7 @@ class JadwalController extends BaseController
         $data = [
             'title' => 'Lesson Timetable Management',
             'page_title' => 'Create List Lesson Timetable',
-            'bukus' => $this->BukuModel->findAll(),
+            'mapels' => $this->MapelModel->findAll(),
             'gurus' =>$this->GuruModel->findAll(),
         ];
 
@@ -69,7 +69,7 @@ class JadwalController extends BaseController
             'title' => 'Lesson Timetable Management',
             'page_title' => 'Edit Lesson Timetable',
             'jadwal' => $this->JadwalModel->find($jadwal_id),
-            'bukus' => $this->BukuModel->findAll(),
+            'mapels' => $this->MapelModel->findAll(),
             'gurus' => $this->GuruModel->findAll(),
         ];
         return view('jadwal/edit', $data);

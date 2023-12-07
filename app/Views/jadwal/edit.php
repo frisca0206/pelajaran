@@ -33,10 +33,10 @@
                                             <select id="nama_pelajaran" class="form-control" name="nama_pelajaran"
                                                 class="nama_pelajaran">
                                                 <option class=""></option>
-                                                <?php foreach ($bukus as $key => $buku) : ?>
-                                                <option value="<?php echo $buku['id']; ?>"
-                                                    <?php if($jadwal['nama_pelajaran_id'] == $buku['id']) echo "selected"; ?>>
-                                                    <?php echo $buku['nama_pelajaran']; ?></option>
+                                                <?php foreach ($mapels as $key => $mapel) : ?>
+                                                <option value="<?php echo $mapel['id']; ?>"
+                                                    <?php if($jadwal['nama_pelajaran_id'] == $mapel['id']) echo "selected"; ?>>
+                                                    <?php echo $mapel['nama_pelajaran']; ?></option>
                                                 <?php endforeach ?>
                                             </select>
                                         </div>

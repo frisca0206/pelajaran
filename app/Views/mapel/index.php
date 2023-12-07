@@ -24,13 +24,13 @@
                         <div class="card-header">
                             <h3 class="card-title">Manage Subjects</h3>
                             <div class="d-flex justify-content-end mb-1">
-                                <a href="<?= url_to('buku-create') ?>" class="btn btn-success mb-2"
+                                <a href="<?= url_to('mapel-create') ?>" class="btn btn-success mb-2"
                                     id="btn_modal_create">Create</a>
                             </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="buku_table" class="table table-bordered table-hover masterdata-datatable">
+                            <table id="mapel_table" class="table table-bordered table-hover masterdata-datatable">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -39,14 +39,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($bukus as $key => $subject) : ?>
+                                    <?php foreach ($mapels as $key => $subject) : ?>
                                     <tr>
                                         <td><?= $key + 1 ?></td>
                                         <td><?= $subject['nama_pelajaran'] ?></td>
                                         <td>
-                                            <a href="<?= url_to('buku-edit', $subject['id'])?>"
+                                            <a href="<?= url_to('mapel-edit', $subject['id'])?>"
                                                 class="btn btn-primary btn-sm">Edit</a>
-                                            <a href="<?= url_to('buku-delete', $subject['id'])?>"
+                                            <a href="<?= url_to('mapel-delete', $subject['id'])?>"
                                                 class="btn btn-danger btn-sm">Delete</a>
                                         </td>
                                     </tr>

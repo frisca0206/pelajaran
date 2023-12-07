@@ -3,15 +3,15 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\BukuModel;
+use App\Models\MapelModel;
 
-class BukuController extends BaseController
+class MapelController extends BaseController
 {
-    protected $BukuModel;
+    protected $MapelModel;
 
     public function __construct()
     {
-        $this->BukuModel = new BukuModel();
+        $this->MapelModel = new MapelModel();
     }
 
     public function index()
@@ -19,9 +19,9 @@ class BukuController extends BaseController
         $data = [
             'title' => 'Subjects Management',
             'page_title' => 'Subjects List',
-            'bukus' => $this->BukuModel->findAll() 
+            'mapels' => $this->MapelModel->findAll() 
         ];
-        return view('buku/index', $data);
+        return view('mapel/index', $data);
     }
 
     public function create()
@@ -31,47 +31,47 @@ class BukuController extends BaseController
             'page_title' => 'Create Subjects List',
         ];
 
-        return view('buku/create', $data);
+        return view('mapel/create', $data);
     }
 
     public function store()
     {
         $nama_pelajaran = $this->request->getPost('nama_pelajaran');
 
-        $new_buku = [
+        $new_mapel = [
             'nama_pelajaran' => $nama_pelajaran
         ];
 
-        $insert_buku = $this->BukuModel->insert($new_buku);
-        return redirect()->to('buku');
+        $insert_mapel = $this->MapelModel->insert($new_mapel);
+        return redirect()->to('mapel');
     }
 
-    public function edit($buku_id)
+    public function edit($mapel_id)
     {
         $data = [
             'title' => 'Subjects Management',
             'page_title' => 'Edit Subjects',
-            'buku' => $this->BukuModel->find($buku_id)
+            'mapel' => $this->MapelModel->find($mapel_id)
         ];
-        return view('buku/edit', $data);
+        return view('mapel/edit', $data);
     }
 
     public function update()
     {
-        $buku_id = $this->request->getPost('buku_id');
+        $mapel_id = $this->request->getPost('mapel_id');
         $nama_pelajaran = $this->request->getPost('nama_pelajaran');
 
-        $edit_buku = [
+        $edit_mapel = [
             'nama_pelajaran' => $nama_pelajaran
         ];
 
-        $update_buku = $this->BukuModel->update($buku_id, $edit_buku);
-        return redirect()->to('buku');
+        $update_mapel = $this->MapelModel->update($mapel_id, $edit_mapel);
+        return redirect()->to('mapel');
     }
 
-    public function delete($buku_id)
+    public function delete($mapel_id)
     {
-        $this->BukuModel->delete($buku_id);
-        return redirect()->to('buku');
+        $this->MapelModel->delete($mapel_id);
+        return redirect()->to('mapel');
     }
 }
